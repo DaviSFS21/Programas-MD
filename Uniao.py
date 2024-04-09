@@ -1,4 +1,4 @@
-# O programa recebe dois conjuntos e une seus elementos, formando o conjunto AB.
+# O programa recebe dois conjuntos e une seus elementos, formando o conjunto AvB.
 
 import os
 

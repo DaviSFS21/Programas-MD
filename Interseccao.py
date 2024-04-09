@@ -1,4 +1,4 @@
-# Após receber os conjuntos, o programa verifica elementos em comum entre eles.
+# Após receber os conjuntos, o programa insere elementos em comum entre eles no conjunto A^B.
 
 import os
 
