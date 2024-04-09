@@ -1,4 +1,4 @@
-# A ideia deste programa é analisar dois conjuntos, A e B, e verificar se um é contido no outro ou não.
+# Após receber os conjuntos, o programa verifica elementos em comum entre eles.
 
 import os
 
@@ -18,21 +18,16 @@ def ins_elementos(conj,nome):
 ins_elementos(conjA,"A")
 ins_elementos(conjB,"B")
 
+conjA = set(conjA)
+conjB = set(conjB)
+
+intersAB = sorted(list(conjA & conjB))
 
 print("Conjunto A: ",conjA)
 print("Conjunto B: ",conjB)
 
-AcB = all(item in conjB for item in conjA)
-BcA = all(item in conjA for item in conjB)
-
-if AcB & BcA:
-    print("A e B possuem todos os elementos iguais")
-elif AcB:
-    print("A está contido em B")
-elif BcA:
-    print("B está contido em A")
-else:
-    print("A não está contido em B, e vice-versa")
+print("\n")
+print("Conjunto A ^ B: ",intersAB)
 
 print()
 print("|-----------------------------------------------|")
