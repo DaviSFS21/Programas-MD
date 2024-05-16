@@ -27,6 +27,7 @@ var valor: string = '';
 
 console.clear();
 
+console.log("O programa irá mostrar a matriz de igualdade de dois conjuntos.");
 console.log("Digite os valores do conjunto A(digite '/' para parar): ");
 while (true) {
     valor = '';
