@@ -1,4 +1,4 @@
-function produtoCartesiano(conjA: string[], conjB: string[]): string {
+function matriz(conjA: string[], conjB: string[]): string {
     var produto: string = '__|_' + conjB[0];
     for (var j = 1; j < conjB.length; j++) {
         produto += '_|_' + conjB[j];
@@ -52,4 +52,4 @@ while (true) {
 console.clear();
 
 console.log("A matriz de AxB é:")
-console.log(produtoCartesiano(vetor1.filter((este, i) => vetor1.indexOf(este) === i), vetor2.filter((este, i) => vetor2.indexOf(este) === i)));
+console.log(matriz(vetor1.filter((este, i) => vetor1.indexOf(este) === i), vetor2.filter((este, i) => vetor2.indexOf(este) === i)));
